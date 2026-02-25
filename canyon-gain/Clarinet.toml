@@ -1,0 +1,19 @@
+[project]
+name = 'canyon-gain'
+description = ''
+authors = []
+telemetry = true
+cache_dir = '.\.cache'
+requirements = []
+[contracts.canyon-gain]
+path = 'contracts/canyon-gain.clar'
+clarity_version = 3
+epoch = 3.0
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
